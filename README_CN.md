@@ -1,3 +1,5 @@
+中文文档 | **[English](./README.md)**
+
 <p>
   <a href="https://www.aihero.dev/s/skills-newsletter">
     <picture>
@@ -55,8 +57,8 @@ npx skills@latest add mattpocock/skills
 
 **解决方案**是使用：
 
-- [`/grill-me`](./skills/productivity/grill-me/SKILL.md) — 用于非代码场景
-- [`/grill-with-docs`](./skills/engineering/grill-with-docs/SKILL.md) — 与 [`/grill-me`](./skills/productivity/grill-me/SKILL.md) 相同，但增加了更多好东西（见下文）
+- [`/grill-me`](./skills_cn/productivity/grill-me/SKILL.md) — 用于非代码场景
+- [`/grill-with-docs`](./skills_cn/engineering/grill-with-docs/SKILL.md) — 与 [`/grill-me`](./skills_cn/productivity/grill-me/SKILL.md) 相同，但增加了更多好东西（见下文）
 
 这些是我最受欢迎的技能。它们帮助你在开始之前与代理对齐，并深入思考你要做的变更。每次想要做变更时都使用它们。
 
@@ -86,7 +88,7 @@ npx skills@latest add mattpocock/skills
 
 </details>
 
-这已内置在 [`/grill-with-docs`](./skills/engineering/grill-with-docs/SKILL.md) 中。它是一个追问会话，同时帮助你与 AI 建立共享语言，并在 ADR 中记录难以解释的决策。
+这已内置在 [`/grill-with-docs`](./skills_cn/engineering/grill-with-docs/SKILL.md) 中。它是一个追问会话，同时帮助你与 AI 建立共享语言，并在 ADR 中记录难以解释的决策。
 
 很难解释这有多强大。它可能是这个仓库里最酷的技术。试试看就知道了。
 
@@ -111,9 +113,9 @@ npx skills@latest add mattpocock/skills
 
 对于自动化测试，红-绿-重构循环至关重要。代理先写一个失败的测试，然后修复测试。这帮助代理获得一致的反馈水平，从而产出更好的代码。
 
-我构建了一个 **[`/tdd`](./skills/engineering/tdd/SKILL.md) 技能**，可以插入任何项目。它鼓励红-绿-重构，并给代理大量关于什么是好测试和坏测试的指导。
+我构建了一个 **[`/tdd`](./skills_cn/engineering/tdd/SKILL.md) 技能**，可以插入任何项目。它鼓励红-绿-重构，并给代理大量关于什么是好测试和坏测试的指导。
 
-对于调试，我还构建了一个 **[`/diagnose`](./skills/engineering/diagnose/SKILL.md)** 技能，将最佳调试实践封装在一个简单的循环中。
+对于调试，我还构建了一个 **[`/diagnose`](./skills_cn/engineering/diagnose/SKILL.md)** 技能，将最佳调试实践封装在一个简单的循环中。
 
 ### #4：我们构建了一个泥球
 
@@ -131,10 +133,10 @@ npx skills@latest add mattpocock/skills
 
 这已内建到这些技能的每一层：
 
-- [`/to-prd`](./skills/engineering/to-prd/SKILL.md) 在创建 PRD 之前询问你要涉及哪些模块
-- [`/zoom-out`](./skills/engineering/zoom-out/SKILL.md) 让代理在整个系统的上下文中解释代码
+- [`/to-prd`](./skills_cn/engineering/to-prd/SKILL.md) 在创建 PRD 之前询问你要涉及哪些模块
+- [`/zoom-out`](./skills_cn/engineering/zoom-out/SKILL.md) 让代理在整个系统的上下文中解释代码
 
-关键是，[`/improve-codebase-architecture`](./skills/engineering/improve-codebase-architecture/SKILL.md) 帮助你拯救已经变成泥球的代码库。我建议每隔几天在代码库上运行一次。
+关键是，[`/improve-codebase-architecture`](./skills_cn/engineering/improve-codebase-architecture/SKILL.md) 帮助你拯救已经变成泥球的代码库。我建议每隔几天在代码库上运行一次。
 
 ### 总结
 
@@ -146,31 +148,31 @@ npx skills@latest add mattpocock/skills
 
 我每天用于代码工作的技能。
 
-- **[diagnose](./skills/engineering/diagnose/SKILL.md)** — 针对疑难 bug 和性能退化的规范诊断循环：复现 → 最小化 → 假设 → 插桩 → 修复 → 回归测试。
-- **[grill-with-docs](./skills/engineering/grill-with-docs/SKILL.md)** — 追问会话，对照现有领域模型挑战你的计划，锐化术语，并内联更新 `CONTEXT.md` 和 ADR。
-- **[triage](./skills/engineering/triage/SKILL.md)** — 通过分流角色的状态机对 issue 进行分流。
-- **[improve-codebase-architecture](./skills/engineering/improve-codebase-architecture/SKILL.md)** — 在代码库中寻找深化机会，参考 `CONTEXT.md` 中的领域语言和 `docs/adr/` 中的决策。
-- **[setup-matt-pocock-skills](./skills/engineering/setup-matt-pocock-skills/SKILL.md)** — 搭建其他工程技能所需的每仓库配置（issue 追踪器、分流标签词汇、领域文档布局）。每个仓库运行一次，然后才能使用 `to-issues`、`to-prd`、`triage`、`diagnose`、`tdd`、`improve-codebase-architecture` 或 `zoom-out`。
-- **[tdd](./skills/engineering/tdd/SKILL.md)** — 采用红-绿-重构循环的测试驱动开发。每次构建一个垂直切片的功能或修复 bug。
-- **[to-issues](./skills/engineering/to-issues/SKILL.md)** — 将任何计划、规格或 PRD 拆分为可独立抓取的 GitHub issue，使用垂直切片。
-- **[to-prd](./skills/engineering/to-prd/SKILL.md)** — 将当前对话上下文转化为 PRD 并提交为 GitHub issue。无需面试——直接综合你已经讨论的内容。
-- **[zoom-out](./skills/engineering/zoom-out/SKILL.md)** — 让代理拉远视角，对不熟悉的代码段给出更广泛的上下文或更高层的视角。
-- **[prototype](./skills/engineering/prototype/SKILL.md)** — 构建一次性原型来充实设计——要么是一个可运行的终端应用用于状态/业务逻辑问题，要么是几个可从一个路由切换的截然不同的 UI 变体。
+- **[diagnose](./skills_cn/engineering/diagnose/SKILL.md)** — 针对疑难 bug 和性能退化的规范诊断循环：复现 → 最小化 → 假设 → 插桩 → 修复 → 回归测试。
+- **[grill-with-docs](./skills_cn/engineering/grill-with-docs/SKILL.md)** — 追问会话，对照现有领域模型挑战你的计划，锐化术语，并内联更新 `CONTEXT.md` 和 ADR。
+- **[triage](./skills_cn/engineering/triage/SKILL.md)** — 通过分流角色的状态机对 issue 进行分流。
+- **[improve-codebase-architecture](./skills_cn/engineering/improve-codebase-architecture/SKILL.md)** — 在代码库中寻找深化机会，参考 `CONTEXT.md` 中的领域语言和 `docs/adr/` 中的决策。
+- **[setup-matt-pocock-skills](./skills_cn/engineering/setup-matt-pocock-skills/SKILL.md)** — 搭建其他工程技能所需的每仓库配置（issue 追踪器、分流标签词汇、领域文档布局）。每个仓库运行一次，然后才能使用 `to-issues`、`to-prd`、`triage`、`diagnose`、`tdd`、`improve-codebase-architecture` 或 `zoom-out`。
+- **[tdd](./skills_cn/engineering/tdd/SKILL.md)** — 采用红-绿-重构循环的测试驱动开发。每次构建一个垂直切片的功能或修复 bug。
+- **[to-issues](./skills_cn/engineering/to-issues/SKILL.md)** — 将任何计划、规格或 PRD 拆分为可独立抓取的 GitHub issue，使用垂直切片。
+- **[to-prd](./skills_cn/engineering/to-prd/SKILL.md)** — 将当前对话上下文转化为 PRD 并提交为 GitHub issue。无需面试——直接综合你已经讨论的内容。
+- **[zoom-out](./skills_cn/engineering/zoom-out/SKILL.md)** — 让代理拉远视角，对不熟悉的代码段给出更广泛的上下文或更高层的视角。
+- **[prototype](./skills_cn/engineering/prototype/SKILL.md)** — 构建一次性原型来充实设计——要么是一个可运行的终端应用用于状态/业务逻辑问题，要么是几个可从一个路由切换的截然不同的 UI 变体。
 
 ### 生产力
 
 通用工作流工具，不限于代码。
 
-- **[caveman](./skills/productivity/caveman/SKILL.md)** — 超压缩通信模式。通过去除填充词减少约 75% 的 token 使用，同时保持完整的技术准确性。
-- **[grill-me](./skills/productivity/grill-me/SKILL.md)** — 对计划或设计进行无情的追问面试，直到决策树的每个分支都被解决。
-- **[handoff](./skills/productivity/handoff/SKILL.md)** — 将当前对话压缩为交接文档，以便另一个代理可以继续工作。
-- **[write-a-skill](./skills/productivity/write-a-skill/SKILL.md)** — 创建具有正确结构、渐进式披露和捆绑资源的新技能。
+- **[caveman](./skills_cn/productivity/caveman/SKILL.md)** — 超压缩通信模式。通过去除填充词减少约 75% 的 token 使用，同时保持完整的技术准确性。
+- **[grill-me](./skills_cn/productivity/grill-me/SKILL.md)** — 对计划或设计进行无情的追问面试，直到决策树的每个分支都被解决。
+- **[handoff](./skills_cn/productivity/handoff/SKILL.md)** — 将当前对话压缩为交接文档，以便另一个代理可以继续工作。
+- **[write-a-skill](./skills_cn/productivity/write-a-skill/SKILL.md)** — 创建具有正确结构、渐进式披露和捆绑资源的新技能。
 
 ### 杂项
 
 我保留但很少使用的工具。
 
-- **[git-guardrails-claude-code](./skills/misc/git-guardrails-claude-code/SKILL.md)** — 设置 Claude Code 钩子，在执行前阻止危险的 git 命令（push、reset --hard、clean 等）。
-- **[migrate-to-shoehorn](./skills/misc/migrate-to-shoehorn/SKILL.md)** — 将测试文件从 `as` 类型断言迁移到 @total-typescript/shoehorn。
-- **[scaffold-exercises](./skills/misc/scaffold-exercises/SKILL.md)** — 创建包含章节、问题、解决方案和讲解的练习目录结构。
-- **[setup-pre-commit](./skills/misc/setup-pre-commit/SKILL.md)** — 设置带有 lint-staged、Prettier、类型检查和测试的 Husky 预提交钩子。
+- **[git-guardrails-claude-code](./skills_cn/misc/git-guardrails-claude-code/SKILL.md)** — 设置 Claude Code 钩子，在执行前阻止危险的 git 命令（push、reset --hard、clean 等）。
+- **[migrate-to-shoehorn](./skills_cn/misc/migrate-to-shoehorn/SKILL.md)** — 将测试文件从 `as` 类型断言迁移到 @total-typescript/shoehorn。
+- **[scaffold-exercises](./skills_cn/misc/scaffold-exercises/SKILL.md)** — 创建包含章节、问题、解决方案和讲解的练习目录结构。
+- **[setup-pre-commit](./skills_cn/misc/setup-pre-commit/SKILL.md)** — 设置带有 lint-staged、Prettier、类型检查和测试的 Husky 预提交钩子。

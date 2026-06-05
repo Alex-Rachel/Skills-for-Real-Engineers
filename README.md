@@ -1,3 +1,5 @@
+**[中文文档](./README_CN.md)** | English
+
 <p>
   <a href="https://www.aihero.dev/s/skills-newsletter">
     <picture>
